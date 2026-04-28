@@ -62,18 +62,23 @@ class GFG {
     }
 
     public static void main(String[] args) {
-        // Creating nodes
-        Node root = new Node(1);
-        Node n2 = new Node(2);
+        
+        Node root = new Node(5);
+        Node n7 = new Node(7);
+        Node n0 = new Node(0);
+        Node n17 = new Node(11);
         Node n3 = new Node(3);
-        Node n4 = new Node(4);
-        Node n5 = new Node(5);
+        Node n9 = new Node(9);
+        Node n10 = new Node(10);
+        Node n11 = new Node(11);
 
-        // Constructing tree
-        addChild(root, n2);
-        addChild(root, n3);
-        addChild(n2, n4);
-        addChild(n2, n5);
+        addChild(root, n7);
+        addChild(root, n0);
+        addChild(n7, n17);
+        addChild(n7, n3);
+        addChild(n0, n9);
+        addChild(n0, n10);
+        addChild(n9, n11);
 
         System.out.println("Parents of each node:");
         printParents(root, null);
@@ -82,7 +87,7 @@ class GFG {
         printChildren(root);
 
         System.out.print("Leaf nodes: ");
-        printLeafNodes(root);
+            printLeafNodes(root);
         System.out.println();
 
         System.out.println("Degrees of nodes:");
